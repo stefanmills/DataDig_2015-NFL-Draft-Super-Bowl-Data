@@ -225,7 +225,8 @@ INSERT INTO picks (pick_number, name, college, picked_by, position)
 
 ### c. Querying Individual Positions
 - SQL queries were employed to identify and explore individual positions picked in the draft.
-  ```
+
+```
 #QUERYING THE NUMBER OF INDIVIDUAL POSITION PICKED
 SELECT 
 	picked_by, 
@@ -233,7 +234,7 @@ SELECT
 FROM picks 
 GROUP BY picked_by 
 ORDER BY Number_Picked DESC;
-  ```
+```
 
 ### d. Querying Best Colleges
 - Further queries were performed to determine the best colleges based on the number of draft picks.
