@@ -229,10 +229,10 @@ INSERT INTO picks (pick_number, name, college, picked_by, position)
 ```
 #QUERYING THE NUMBER OF INDIVIDUAL POSITION PICKED
 SELECT 
-	picked_by, 
+	position, 
     COUNT(*) AS Number_Picked 
 FROM picks 
-GROUP BY picked_by 
+GROUP BY position 
 ORDER BY Number_Picked DESC;
 ```
 
